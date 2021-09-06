@@ -1,0 +1,19 @@
+Install Docker:
+    1. Go to Docker webpage and download Docker Desktop for Windows or MAC: Stable channel 
+install it
+    2. Go to Docker hub https://hub.docker.com/ and create a Docker account
+    3. Open Docker Desktop 
+    4. Sign in at Docker desktop with your docker hub account  
+Connect to Docker and Rstudio to Jiangyan’s server: 
+    1. start Docker and wait until it is running
+    2. download the  image in docker hub from following website https://hub.docker.com/repository/docker/jiangyanyu/jyu_rstudio
+              Copy the docker pull command (docker pull jiangyanyu/jyu_rstudio)
+    3. Open Powershell 
+        a. Paste the copied the docker pull command: docker pull jiangyanyu/jyu_rstudio
+Press Enter  
+        b. type in: docker run -p 8787:8787 -e ROOT=TRUE  -e USER=jyu -e PASSWORD=jyu jiangyanyu/jyu_rstudio:0.3 
+Press Enter  
+    4. open your browser and go to http://localhost:8787
+Sign in to R studio using the username “jyu” and the password “jyu”
+  You are now in the server of the Rstudio
+Note: step 2 and 3a just need to be done once, step 3b need to be done every time
