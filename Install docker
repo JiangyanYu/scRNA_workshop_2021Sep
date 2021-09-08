@@ -1,13 +1,13 @@
 Created by Dr. Lili Zhang (lzhang@uni-bonn.de) at 2021-May-03
 
-Step1: Install Docker
+# Step1: Install Docker
 1) Go to Docker webpage and download Docker Desktop for Windows or MAC
 2) Install docker accordingly
 3) Go to Docker hub https://hub.docker.com/ and create a Docker account
 4) Open Docker Desktop 
 5) Sign in at Docker desktop with your docker hub account 
 
-Step2: Download docker image
+# Step2: Download docker image
 1) Start Docker and wait until it is running
 2) Download the image in docker hub 
  a) Go to following website https://hub.docker.com/repository/docker/jiangyanyu/jyu_rstudio
@@ -15,7 +15,7 @@ Step2: Download docker image
  c) Paste the copied the docker pull command: docker pull jiangyanyu/jyu_rstudio:2.0
  Press Enter  
  
-Step3: Login to R studio docker
+# Step3: Login to R studio docker
  a) Stay in Powershell or terminal
  b) Type in: docker run -p 8787:8787 -e ROOT=TRUE  -e USER=jyu -e PASSWORD=jyu jiangyanyu/jyu_rstudio:2.0 
  Press Enter  
