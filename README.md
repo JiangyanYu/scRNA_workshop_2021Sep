@@ -4,6 +4,6 @@ Here is the hub for the scRNA workshop at 2021-Sep-10.
 
 To follow the workshop, please:
 
-1) Install docker and download image first according to Install_docker
+1) Install docker and download image first according to "Install_docker".
 
-2) Then upload the script into rstudio.
+2) Then upload the script "scRNA_workshop.Rmd" into rstudio.
